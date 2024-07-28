@@ -24,8 +24,8 @@ class Sam(nn.Module):
         image_encoder: ImageEncoderViT,
         prompt_encoder: PromptEncoder,
         mask_decoder: MaskDecoder,
-        pixel_mean: List[float] = [123.675, 116.28, 103.53],
-        pixel_std: List[float] = [58.395, 57.12, 57.375],
+        pixel_mean: List[float] = [168.62725830078125, 139.95387268066406, 166.19667053222656],
+        pixel_std: List[float] = [46.016536712646484, 52.99844741821289, 40.63928985595703],
     ) -> None:
         """
         SAM predicts object masks from an image and input prompts.
